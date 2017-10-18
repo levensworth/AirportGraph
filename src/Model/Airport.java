@@ -18,4 +18,5 @@ public class Airport {
         this.visited = false;
         this.tag = 0;
     }
+
 }
