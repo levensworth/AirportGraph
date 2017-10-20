@@ -26,8 +26,8 @@ public class Location {
         return timeZone;
     }
 
-    public boolean equlas(Object o){
-
+    @Override
+    public boolean equals(Object o){
         if(o == null || !getClass().equals(o.getClass())){
             return false;
         }
@@ -36,5 +36,10 @@ public class Location {
 
         return getLatitude() == aux.getLatitude() && getLongitude() == aux.getLongitude();
 
+    }
+
+    @Override
+    public String toString(){
+        return "(Lat:"+latitude+" Long:"+longitude+").";
     }
 }
