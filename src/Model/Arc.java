@@ -30,6 +30,7 @@ public class Arc {
         return this.weight;
     }
 
+
     @Override
     public boolean equals(Object obj){
         if(obj == null) return  false;
